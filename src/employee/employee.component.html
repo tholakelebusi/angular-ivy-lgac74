@@ -1,0 +1,27 @@
+<p>
+employee works!
+</p>
+<h3>workersd</h3>
+
+<div class="all">
+<div *ngFor="let item of employees">
+
+   <img class="photo" src="{{item.myimage}}">
+   <div class="name">
+    {{item.name}}
+    {{item.surname}}
+    </div>
+
+    <div class="age">
+        {{item.age}}
+    </div>
+
+    <div class="position">
+        {{item.position}}
+    </div>
+
+    <button (click)="delete(item)">Delete</button>
+    <button (click)="update()">Update</button>
+
+</div>
+</div>
