@@ -8,7 +8,7 @@ import { RecordService } from '../record.service';
 })
 export class EmployeelistComponent implements OnInit {
 
-  employeelist={}
+  employeelist=[];
   constructor(private myfirst:RecordService) { }
 
  
