@@ -3,7 +3,8 @@ employeelist works!
 </p>
 <div>
     <h3>List of the Employee</h3>
-    <div *ngFor="let list of employeelist">
+    <mat-grid-list cols="3" rowHeight="500px">
+  <mat-grid-tile *ngFor="let list of employeelist">
         <table>
             <tr>
                 <td>Names</td>
@@ -19,4 +20,5 @@ employeelist works!
                 <td> {{list.position}}</td>
             </tr>
             </table>
+  </mat-grid-tile>
     </div>

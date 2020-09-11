@@ -5,6 +5,9 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from '../app-routing/app-routing.module';
 import { Routes, RouterModule } from '@angular/router';
+import {MatButtonModule} from '@angular/material/button';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -14,7 +17,7 @@ import {NewemployeeComponent} from '../newemployee/newemployee.component';
 
 
 @NgModule({
-  imports:[BrowserModule,AppRoutingModule,FormsModule,RouterModule],
+  imports:[BrowserModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,MatGridListModule],
 
   declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent
     ],

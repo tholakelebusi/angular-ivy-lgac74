@@ -1,12 +1,14 @@
 <p>
 employee works!
 </p>
-<h3>workersd</h3>
+<h3>workers</h3>
 
 <div class="all">
-<div *ngFor="let item of employees">
+<mat-grid-list cols="3" rowHeight="500px">
+  <mat-grid-tile *ngFor="let item of employees">
 
    <img class="photo" src="{{item.myimage}}">
+
    <div class="name">
     {{item.name}}
     {{item.surname}}
@@ -20,8 +22,9 @@ employee works!
         {{item.position}}
     </div>
 
-    <button (click)="delete(item)">Delete</button>
-    <button (click)="update()">Update</button>
+    <button mat-raised-button class (click)="delete(item)">Delete</button>
+    <button mat-raised-button class(click)="update()">Update</button>
+    </mat-grid-list>
 
 </div>
 </div>

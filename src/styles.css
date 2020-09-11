@@ -1,4 +1,7 @@
 /* Add application styles & imports to this file! */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600,700');
 body{
     background-color: burlywood;
 }

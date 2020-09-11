@@ -16,13 +16,9 @@ export class EmployeeComponent implements OnInit {
   { myimage: 'https://dk9zyhfatdvcy.cloudfront.net/public/coaches/ce09b405-6d1e-4e48-9353-a2b2f4640f40/original', name: "James", surname: "Cossa", position: "Programmer", age: 33,},
   { myimage:'https://8020.legal/images/staff/m_allen.jpg',name: "Busi", surname: "khosa", position: "Secretary", age: 24},
   { myimage:'https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2016/02/Headshot-on-White-Background_1.jpg?resize=750%2C486&ssl=1',name: "Nomusa", surname: "zwane", position: "Business Analyst", age: 22,},
-{ myimage: 'http://images2.living.net/ImagesHomeProd1/TN/tln/member/photos/m11568221.jpg', name: "Smangele", surname: "Nhlongo", position: "Manager", age: 28 },
-
+{ myimage: 'http://images2.living.net/ImagesHomeProd1/TN/tln/member/photos/m11568221.jpg', name: "Smangele", surname: "Nhlongo", position: "Manager", age: 28} 
 ];
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  
 
   delete(name)
   {
@@ -45,7 +41,10 @@ export class EmployeeComponent implements OnInit {
   
     }
 
+constructor() { }
 
+  ngOnInit(): void {
+  }
  //udating button
 update()
 {
