@@ -1,10 +1,9 @@
-
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EmployeeComponent } from './employee/employee.component';
-import { EmployeelistComponent } from './employeelist/EmployeelistComponent';
-import { ProjectComponent } from './project/project.component';
-import { NewEployeeComponent } from './newemployee/newemployee.component';
+import { EmployeeComponent } from '../employee/employee.component';
+import { EmployeelistComponent } from '../employeelist/employeelist.component';
+import { ProjectComponent } from '../project/project.component';
+import { NewemployeeComponent } from '../newemployee/newemployee.component';
 
 
 
@@ -21,4 +20,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-
