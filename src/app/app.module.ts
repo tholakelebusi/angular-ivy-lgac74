@@ -13,6 +13,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
 
 
+
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import {EmployeelistComponent} from '../employeelist/employeelist.component'
@@ -20,8 +21,9 @@ import {ProjectComponent} from '../project/project.component';
 import {NewemployeeComponent} from '../newemployee/newemployee.component';
 
 
+
 @NgModule({
-  imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule],
+  imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule],
 
   declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent
     ],

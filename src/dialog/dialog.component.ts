@@ -15,7 +15,7 @@ export class DialogComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) private data: any,
     private dialogRef: MatDialogRef<DialogComponent>) {
       if(data){
-    this.message = data.message || this.message;
+    this.head = data.head || this.head;
 
     console.log(data.message);
     if (data.buttonText) {
