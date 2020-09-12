@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DialogComponent } from '../dialog/dialog.component';
 
 @Component({
   selector: 'app-employee',
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employee.component.scss']
 })
 export class EmployeeComponent implements OnInit {
+
+  constructor(public dialog: MatDialog) { }
+
+  ngOnInit(): void {
+  }
 
   employees = [{ myimage: 'https://scstylecaster.files.wordpress.com/2015/04/477973067.jpg', name: "Bongani", surname: "Smith", position: "Project Manager", age: 44},
   { myimage: 'https://www.ebony.com/wp-content/uploads/2016/07/businessman1_original_13747.jpg', name: "Pumlani", surname: "Fenter", position: "IT Analyst", age: 18 },
@@ -20,7 +26,7 @@ export class EmployeeComponent implements OnInit {
 ];
   
 
-  delete(name)
+ /* delete(name)
   {
     var retval = confirm("Do you want to Delete");
     if (retval == true)
@@ -40,11 +46,29 @@ export class EmployeeComponent implements OnInit {
   }
   
     }
+    */
+       openDialog(employees) {
+    const dialogRef = this.dialog.open(DialogComponent,{
+      data:{
+        message: 'Are you sure want to delete?',
+        buttonText: {
+          ok: 'Delete',
+          cancel: 'No'
+        }
+      }
+    });
 
-constructor() { }
+       dialogRef.afterClosed().subscribe((confirmed: boolean) => {
+      if (confirmed) {
+      const index = this.Company_Employees.indexOf(Employee,0)
+      if (index >-1) {
+        this.Company_Employees.splice(index,1);
+      }
+      }
+    });
+     }
 
-  ngOnInit(): void {
-  }
+
  //udating button
 update()
 {
