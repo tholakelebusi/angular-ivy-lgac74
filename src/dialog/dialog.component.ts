@@ -7,7 +7,7 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog
   styleUrls: ['./dialog.component.css']
 })
 export class DialogComponent implements OnInit {
-  message: string = "Are you sure?"
+  head: string = "Are you sure?"
   confirmButtonText = "Yes"
   cancelButtonText = "Cancel";
   

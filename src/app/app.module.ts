@@ -25,6 +25,7 @@ import {NewemployeeComponent} from '../newemployee/newemployee.component';
 
   declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent
     ],
+     entryComponents:[DialogComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
