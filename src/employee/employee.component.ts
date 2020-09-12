@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DialogComponent } from '../dialog/dialog.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-employee',
@@ -47,7 +48,7 @@ export class EmployeeComponent implements OnInit {
   
     }
     */
-       openDialog(employees) {
+       openDialog(employ) {
     const dialogRef = this.dialog.open(DialogComponent,{
       data:{
         message: 'Are you sure want to delete?',
@@ -60,9 +61,9 @@ export class EmployeeComponent implements OnInit {
 
        dialogRef.afterClosed().subscribe((confirmed: boolean) => {
       if (confirmed) {
-      const index = this.Company_Employees.indexOf(Employee,0)
+      const index = this.employees.indexOf(employ,0)
       if (index >-1) {
-        this.Company_Employees.splice(index,1);
+        this.employees.splice(index,1);
       }
       }
     });

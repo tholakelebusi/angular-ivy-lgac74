@@ -11,7 +11,7 @@ import {MatCardModule} from '@angular/material/card';
 
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
-import {MatDialogModule} from '@angular/material/dialog';
+
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
