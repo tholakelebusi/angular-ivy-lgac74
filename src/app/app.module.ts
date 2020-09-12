@@ -16,7 +16,7 @@ import { DialogComponent } from '../dialog/dialog.component';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import {EmployeelistComponent} from '../employeelist/employeelist.component'
+import {EmployeelistComponent} from '../employeelist/employeelist.component';
 import {ProjectComponent} from '../project/project.component';
 import {NewemployeeComponent} from '../newemployee/newemployee.component';
 
