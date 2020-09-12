@@ -9,6 +9,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogComponent } from '../dialog/dialog.component';
+
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import {EmployeelistComponent} from '../employeelist/employeelist.component'
@@ -17,7 +20,7 @@ import {NewemployeeComponent} from '../newemployee/newemployee.component';
 
 
 @NgModule({
-  imports:[BrowserModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,MatGridListModule],
+  imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,MatGridListModule],
 
   declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent
     ],

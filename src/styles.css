@@ -63,4 +63,12 @@ p
      width:5cm;
      
 }
+tr{
+    background-color:whitesmoke;
 
+}
+
+td{
+    font-size: larger;
+    font-style: oblique;
+}
