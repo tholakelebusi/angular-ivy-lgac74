@@ -13,6 +13,9 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
 
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -23,7 +26,7 @@ import {NewemployeeComponent} from '../newemployee/newemployee.component';
 
 
 @NgModule({
-  imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule],
+  imports:[BrowserModule,MatDialogModule,AppRoutingModule,FormsModule,RouterModule,MatCardModule,MatButtonModule,BrowserAnimationsModule],
 
   declarations:[ AppComponent,HelloComponent,EmployeelistComponent,ProjectComponent,NewemployeeComponent
     ],

@@ -7,28 +7,16 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog
   styleUrls: ['./dialog.component.css']
 })
 export class DialogComponent implements OnInit {
-  head: string = "Are you sure?"
-  confirmButtonText = "Yes"
-  cancelButtonText = "Cancel";
-  
   constructor(
-    @Inject(MAT_DIALOG_DATA) private data: any,
-    private dialogRef: MatDialogRef<DialogComponent>) {
-      if(data){
-    this.head = data.head || this.head;
+    public dialogRef: MatDialogRef<DialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public message: string) { }
 
-    console.log(data.message);
-    if (data.buttonText) {
-      this.confirmButtonText = data.buttonText.ok || this.confirmButtonText;
-      this.cancelButtonText = data.buttonText.cancel || this.cancelButtonText;
-    }
-      }
+  onNoClick(): void {
+    this.dialogRef.close();
   }
 
+  
+    ngOnInit(): void {
+  }
 
-  ngOnInit() {
-  }
-  onConfirmClick(): void {
-    this.dialogRef.close(true);
-  }
 }

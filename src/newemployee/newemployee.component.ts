@@ -9,9 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class NewemployeeComponent implements OnInit {
 
   constructor() { }
+  
 
-  ngOnInit(): void {
-  }
 
   employees = [{ myimage: 'https://scstylecaster.files.wordpress.com/2015/04/477973067.jpg', name: "Bongani", surname: "Smith", position: "Project Manager", age: 44},
   { myimage: 'https://www.ebony.com/wp-content/uploads/2016/07/businessman1_original_13747.jpg', name: "Pumlani", surname: "Fenter", position: "IT Analyst", age: 18 },
